@@ -1,19 +1,39 @@
-plugins {
-    id 'java'
+// '스프링 이니셜라이저'를 사용하면 간단하게 설정할 수 있음.
+
+// 해당 프로젝트의 의존성을 관리
+buildscript {
+    ext {
+        springBootVersion = '2.1.9.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
 }
 
+// 앞서 선언한 플러그인 의존성들을 적용할 것인지 결정하는 코드
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management' // spring boot의 의존성을 관리해주는 플러그인
+
+//
 group 'io.go-ahead'
 version '1.0-SNAPSHOT'
+sourceCompatibility = 1.8 // java 버전
 
+// 각종 의존성들을 어떤 원격 저장소에서 받을 지 정하는 코드
 repositories {
     mavenCentral()
+    jcenter()
 }
 
+// 프로젝트 개발에 필요한 의존성들을 선언
+// groovy 언어로된 Gradle DLS(Domain-specific-Language)를 사용.
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
-}
-
-test {
-    useJUnitPlatform()
+    compile('org.springframework.boot:spring-boot-starter-web')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
 }
