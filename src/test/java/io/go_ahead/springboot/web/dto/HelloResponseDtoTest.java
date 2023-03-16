@@ -1,4 +1,4 @@
-package io.go_ahead.springboot.dto;
+package io.go_ahead.springboot.web.dto;
 
 import io.go_ahead.springboot.web.dto.HelloResponseDto;
 import org.junit.Test;

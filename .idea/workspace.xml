@@ -4,15 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="846ed6ae-416c-4df8-9fcd-5911721705f7" name="변경" comment="Add gitignore">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/go_ahead/springboot/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/go_ahead/springboot/web/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/go_ahead/springboot/web/dto/HelloResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/go_ahead/springboot/HelloControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/go_ahead/springboot/dto/HelloResponseDtoTest.java" afterDir="false" />
+    <list default="true" id="846ed6ae-416c-4df8-9fcd-5911721705f7" name="변경" comment="Learn How to add unit test code">
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/go_ahead/springboot/domain/BaseTimeEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/go_ahead/springboot/domain/posts/Posts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/go_ahead/springboot/domain/posts/PostsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/go_ahead/springboot/service/PostsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/go_ahead/springboot/web/PostsApiController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/go_ahead/springboot/web/dto/PostsResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/go_ahead/springboot/web/dto/PostsSaveRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/go_ahead/springboot/web/dto/PostsUpdateRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/io/go_ahead/springboot/domain/posts/PostsRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/io/go_ahead/springboot/web/PostApiControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/go-ahead/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/go_ahead/springboot/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/go_ahead/springboot/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/go_ahead/springboot/HelloControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/go_ahead/springboot/web/HelloControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/go_ahead/springboot/dto/HelloResponseDtoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/go_ahead/springboot/web/dto/HelloResponseDtoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,13 +60,6 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="go-ahead" type="f1a62948:ProjectNode" />
                 <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="testCompileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-                <item name="org.springframework.boot:spring-boot-starter-test:2.1.9.RELEASE" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="go-ahead" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
                 <item name="testRuntimeClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
               </path>
             </expand>
@@ -71,6 +72,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -97,7 +99,13 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.intentionPowerPack&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.HelloControllerTest.testHelloDtoRtn">
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="io.go_ahead.springboot.domain" />
+      <recent name="io.go_ahead.springboot.service" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.PostsRepositoryTest.BaseTimeEntity_insert">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.go_ahead.springboot.Application" />
       <module name="go-ahead.main" />
@@ -111,7 +119,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HelloControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="HelloResponseDtoTest.testLombokFnc" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -124,7 +132,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;io.go_ahead.springboot.HelloControllerTest&quot;" />
+            <option value="&quot;io.go_ahead.springboot.web.dto.HelloResponseDtoTest.testLombokFnc&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -134,7 +142,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="HelloControllerTest.testHello" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PostApiControllerTest.Posts_insert" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -147,7 +155,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;io.go_ahead.springboot.HelloControllerTest.testHello&quot;" />
+            <option value="&quot;io.go_ahead.springboot.web.PostApiControllerTest.Posts_insert&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -157,7 +165,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="HelloControllerTest.testHelloDtoRtn" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PostApiControllerTest.Posts_modify" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -170,7 +178,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;io.go_ahead.springboot.HelloControllerTest.testHelloDtoRtn&quot;" />
+            <option value="&quot;io.go_ahead.springboot.web.PostApiControllerTest.Posts_modify&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -180,7 +188,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="go-ahead [wrapper --gradle-version 4.10.2]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PostsRepositoryTest.BaseTimeEntity_insert" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -191,25 +199,25 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="wrapper" />
-            <option value="--gradle-version" />
-            <option value="4.10.2" />
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;io.go_ahead.springboot.domain.posts.PostsRepositoryTest.BaseTimeEntity_insert&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.HelloControllerTest.testHelloDtoRtn" />
-        <item itemvalue="Gradle.HelloControllerTest" />
+        <item itemvalue="Gradle.PostsRepositoryTest.BaseTimeEntity_insert" />
         <item itemvalue="애플리케이션.Application" />
-        <item itemvalue="Gradle.HelloControllerTest.testHello" />
-        <item itemvalue="Gradle.go-ahead [wrapper --gradle-version 4.10.2]" />
+        <item itemvalue="Gradle.PostApiControllerTest.Posts_modify" />
+        <item itemvalue="Gradle.PostApiControllerTest.Posts_insert" />
+        <item itemvalue="Gradle.HelloResponseDtoTest.testLombokFnc" />
       </list>
     </recent_temporary>
   </component>
@@ -222,6 +230,14 @@
       <option name="presentableId" value="Default" />
       <updated>1678192190023</updated>
     </task>
+    <task id="LOCAL-00001" summary="Learn How to add unit test code">
+      <created>1678372529698</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1678372529698</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -268,6 +284,17 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Learn How to add unit test code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Learn How to add unit test code" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="java.lang.Long" memberName="value" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

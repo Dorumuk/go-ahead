@@ -1,4 +1,4 @@
-package io.go_ahead.springboot;
+package io.go_ahead.springboot.web;
 
 import io.go_ahead.springboot.web.HelloController;
 import org.junit.Test;
