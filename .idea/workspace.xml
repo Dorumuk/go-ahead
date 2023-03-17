@@ -4,28 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="846ed6ae-416c-4df8-9fcd-5911721705f7" name="변경" comment="Learn How to add unit test code">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/go_ahead/springboot/domain/BaseTimeEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/go_ahead/springboot/domain/posts/Posts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/go_ahead/springboot/domain/posts/PostsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/go_ahead/springboot/service/PostsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/go_ahead/springboot/web/PostsApiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/go_ahead/springboot/web/dto/PostsResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/go_ahead/springboot/web/dto/PostsSaveRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/go_ahead/springboot/web/dto/PostsUpdateRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/go_ahead/springboot/domain/posts/PostsRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/go_ahead/springboot/web/PostApiControllerTest.java" afterDir="false" />
+    <list default="true" id="846ed6ae-416c-4df8-9fcd-5911721705f7" name="변경" comment="Learn Chapter3&#10;&#10;- JPA / Hibernate / Spring Date Jpa의 관계&#10;- Spring Data Jpa를 이용하여 관계형 DB를 객체지향적으로 관리하는 방법&#10;- JPA의 더티 체킹을 이용하면 Update 쿼리 없이 테이블 수정이 가능하다는 것&#10;- JPA Auditing을 이용하여 등록/수정 시간을 자동화하는 방법">
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/go_ahead/springboot/web/IndexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/app/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.mustache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/footer.mustache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/header.mustache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/posts-save.mustache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/io/go_ahead/springboot/web/IndexControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/go_ahead/springboot/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/go_ahead/springboot/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/go_ahead/springboot/HelloControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/go_ahead/springboot/web/HelloControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/go_ahead/springboot/dto/HelloResponseDtoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/go_ahead/springboot/web/dto/HelloResponseDtoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -96,7 +93,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.intentionPowerPack&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -105,7 +102,7 @@
       <recent name="io.go_ahead.springboot.service" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.PostsRepositoryTest.BaseTimeEntity_insert">
+  <component name="RunManager" selected="애플리케이션.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.go_ahead.springboot.Application" />
       <module name="go-ahead.main" />
@@ -119,7 +116,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HelloResponseDtoTest.testLombokFnc" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="IndexControllerTest.main_page_loading" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -132,7 +129,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;io.go_ahead.springboot.web.dto.HelloResponseDtoTest.testLombokFnc&quot;" />
+            <option value="&quot;io.go_ahead.springboot.web.IndexControllerTest.main_page_loading&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -213,11 +210,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.IndexControllerTest.main_page_loading" />
         <item itemvalue="Gradle.PostsRepositoryTest.BaseTimeEntity_insert" />
         <item itemvalue="애플리케이션.Application" />
         <item itemvalue="Gradle.PostApiControllerTest.Posts_modify" />
         <item itemvalue="Gradle.PostApiControllerTest.Posts_insert" />
-        <item itemvalue="Gradle.HelloResponseDtoTest.testLombokFnc" />
       </list>
     </recent_temporary>
   </component>
@@ -237,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678372529698</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Learn Chapter3&#10;&#10;- JPA / Hibernate / Spring Date Jpa의 관계&#10;- Spring Data Jpa를 이용하여 관계형 DB를 객체지향적으로 관리하는 방법&#10;- JPA의 더티 체킹을 이용하면 Update 쿼리 없이 테이블 수정이 가능하다는 것&#10;- JPA Auditing을 이용하여 등록/수정 시간을 자동화하는 방법">
+      <created>1678980407331</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678980407331</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -287,7 +291,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Learn How to add unit test code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Learn How to add unit test code" />
+    <MESSAGE value="Learn Chapter3&#10;&#10;- JPA / Hibernate / Spring Date Jpa의 관계&#10;- Spring Data Jpa를 이용하여 관계형 DB를 객체지향적으로 관리하는 방법&#10;- JPA의 더티 체킹을 이용하면 Update 쿼리 없이 테이블 수정이 가능하다는 것&#10;- JPA Auditing을 이용하여 등록/수정 시간을 자동화하는 방법" />
+    <option name="LAST_COMMIT_MESSAGE" value="Learn Chapter3&#10;&#10;- JPA / Hibernate / Spring Date Jpa의 관계&#10;- Spring Data Jpa를 이용하여 관계형 DB를 객체지향적으로 관리하는 방법&#10;- JPA의 더티 체킹을 이용하면 Update 쿼리 없이 테이블 수정이 가능하다는 것&#10;- JPA Auditing을 이용하여 등록/수정 시간을 자동화하는 방법" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
