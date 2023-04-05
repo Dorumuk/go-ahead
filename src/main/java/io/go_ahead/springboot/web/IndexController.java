@@ -1,5 +1,6 @@
 package io.go_ahead.springboot.web;
 
+import io.go_ahead.springboot.config.auth.LoginUser;
 import io.go_ahead.springboot.config.auth.dto.SessionUser;
 import io.go_ahead.springboot.service.PostsService;
 import io.go_ahead.springboot.web.dto.PostsResponseDto;
@@ -23,10 +24,11 @@ public class IndexController {
      * mustache starter 라이브러리로 인해 .mustache 확장자로 자동 지정
      * */
     @GetMapping("/")
-    public String index(Model model) {
+    public String index(Model model, @LoginUser SessionUser user) {
         model.addAttribute("posts", postsService.findAllDesc());
 
-        SessionUser user = (SessionUser) httpSession.getAttribute("user");
+        // 세션값을 가져오는 부분
+//        SessionUser user = (SessionUser) httpSession.getAttribute("user"); ==> @LoginUser SessionUser user 파라미터로 치환
 
         if (user != null) {
             model.addAttribute("userName", user.getName());
